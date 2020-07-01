@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B4243A29D01880CBBDB52C9 /* Pods_kingFisherPrac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C7E4A6FB577F67CB7863CD /* Pods_kingFisherPrac.framework */; };
 		EA667B842490BAE900BFF0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA667B832490BAE900BFF0BA /* AppDelegate.swift */; };
 		EA667B862490BAE900BFF0BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA667B852490BAE900BFF0BA /* SceneDelegate.swift */; };
 		EA667B882490BAE900BFF0BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA667B872490BAE900BFF0BA /* ViewController.swift */; };
 		EA667B8B2490BAE900BFF0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA667B892490BAE900BFF0BA /* Main.storyboard */; };
 		EA667B8D2490BAE900BFF0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA667B8C2490BAE900BFF0BA /* Assets.xcassets */; };
 		EA667B902490BAE900BFF0BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA667B8E2490BAE900BFF0BA /* LaunchScreen.storyboard */; };
+		EA667B982490BBE800BFF0BA /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA667B972490BBE800BFF0BA /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1793D656EF8501264F9719 /* Pods-kingFisherPrac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kingFisherPrac.debug.xcconfig"; path = "Target Support Files/Pods-kingFisherPrac/Pods-kingFisherPrac.debug.xcconfig"; sourceTree = "<group>"; };
+		72C7E4A6FB577F67CB7863CD /* Pods_kingFisherPrac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kingFisherPrac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA667B802490BAE900BFF0BA /* kingFisherPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kingFisherPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA667B832490BAE900BFF0BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA667B852490BAE900BFF0BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		EA667B8C2490BAE900BFF0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA667B8F2490BAE900BFF0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA667B912490BAE900BFF0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA667B972490BBE800BFF0BA /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		EAB8D2D59215AF9771EA09B6 /* Pods-kingFisherPrac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kingFisherPrac.release.xcconfig"; path = "Target Support Files/Pods-kingFisherPrac/Pods-kingFisherPrac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B4243A29D01880CBBDB52C9 /* Pods_kingFisherPrac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B88E77C489F5B8C345DABEC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C1793D656EF8501264F9719 /* Pods-kingFisherPrac.debug.xcconfig */,
+				EAB8D2D59215AF9771EA09B6 /* Pods-kingFisherPrac.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D259C28DF36A953481B04CAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72C7E4A6FB577F67CB7863CD /* Pods_kingFisherPrac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA667B772490BAE900BFF0BA = {
 			isa = PBXGroup;
 			children = (
 				EA667B822490BAE900BFF0BA /* kingFisherPrac */,
 				EA667B812490BAE900BFF0BA /* Products */,
+				B88E77C489F5B8C345DABEC2 /* Pods */,
+				D259C28DF36A953481B04CAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				EA667B8C2490BAE900BFF0BA /* Assets.xcassets */,
 				EA667B8E2490BAE900BFF0BA /* LaunchScreen.storyboard */,
 				EA667B912490BAE900BFF0BA /* Info.plist */,
+				EA667B972490BBE800BFF0BA /* Images.swift */,
 			);
 			path = kingFisherPrac;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA667B942490BAE900BFF0BA /* Build configuration list for PBXNativeTarget "kingFisherPrac" */;
 			buildPhases = (
+				E0300B96EAC113741AA33F5B /* [CP] Check Pods Manifest.lock */,
 				EA667B7C2490BAE900BFF0BA /* Sources */,
 				EA667B7D2490BAE900BFF0BA /* Frameworks */,
 				EA667B7E2490BAE900BFF0BA /* Resources */,
+				106178E0CC5CBBF5B700144F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		106178E0CC5CBBF5B700144F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kingFisherPrac/Pods-kingFisherPrac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kingFisherPrac/Pods-kingFisherPrac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kingFisherPrac/Pods-kingFisherPrac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0300B96EAC113741AA33F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kingFisherPrac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA667B7C2490BAE900BFF0BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA667B882490BAE900BFF0BA /* ViewController.swift in Sources */,
+				EA667B982490BBE800BFF0BA /* Images.swift in Sources */,
 				EA667B842490BAE900BFF0BA /* AppDelegate.swift in Sources */,
 				EA667B862490BAE900BFF0BA /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +354,7 @@
 		};
 		EA667B952490BAE900BFF0BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1793D656EF8501264F9719 /* Pods-kingFisherPrac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		EA667B962490BAE900BFF0BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB8D2D59215AF9771EA09B6 /* Pods-kingFisherPrac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
